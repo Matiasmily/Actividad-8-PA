@@ -46,7 +46,7 @@ namespace Actividad_8
             string preparacion = Console.ReadLine() ?? "";
             listaRecetas.Add(new Recetas(id, nombre, ingredientes, preparacion));
             Console.WriteLine("\nReceta agregada con éxito");
-            Console.WriteLine("Presione Enter para continuar...");
+            Console.WriteLine("\nPresione Enter para continuar...");
             Console.ReadKey();
         }
         public void BuscarRecetas(List<Recetas> listaRecetas)
@@ -60,7 +60,7 @@ namespace Actividad_8
             {
                 Console.WriteLine("\nReceta Encontrada");
                 Console.WriteLine($"ID: {buscarReceta.ID}\nNombre: {buscarReceta.Nombre}\nIngredientes: {buscarReceta.Ingredientes}\nPreparación: {buscarReceta.Preparacion}");
-                Console.WriteLine("Presione Enter para continuar...");
+                Console.WriteLine("\nPresione Enter para continuar...");
                 Console.ReadKey();
             }
             else
@@ -77,10 +77,10 @@ namespace Actividad_8
             foreach (Recetas recetas in listaRecetas)
             {
                 Console.WriteLine("--------------------------------------------------------------------------------");
-                Console.WriteLine($"ID: {recetas.ID}\nNombre: {recetas.Nombre}\nIngredientes: {recetas.Ingredientes}\n Preparación: {recetas.Preparacion}");
+                Console.WriteLine($"ID: {recetas.ID}\nNombre: {recetas.Nombre}\nIngredientes: {recetas.Ingredientes}\nPreparación: {recetas.Preparacion}");
                 Console.WriteLine("--------------------------------------------------------------------------------");
             }
-            Console.WriteLine("Presione Enter para continuar...");
+            Console.WriteLine("\nPresione Enter para continuar...");
             Console.ReadKey();
         }
     }
